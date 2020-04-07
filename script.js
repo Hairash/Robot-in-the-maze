@@ -25,7 +25,7 @@ class Grid {
 			let p = new Path2D(s);
 			ctx.stroke(p);
 		}
-		
+
 		for (let i = 0; i <= M; i++) {
 			let s = `M ${Indent + i * Cell_size} ${Indent}
 			L ${Indent + i * Cell_size} ${Indent + N * Cell_size}`;
@@ -40,6 +40,27 @@ class Grid {
 function start() {
 	const canvas = document.getElementById('canvas');
 	const ctx = canvas.getContext('2d');
-	let grid = new Grid(ctx, M = 12, N = 8, Cell_size = 50, Indent = 50);
+	let grid = new Grid(ctx, M = 8, N = 6, Cell_size = 80, Indent = 50);
 	grid.draw();
+
+	var img = new Image();
+	img.src = 'img/robot.png';
+	img.onload = function() {
+		ctx.drawImage(img, grid.Indent, grid.Indent,
+			grid.Cell_size, grid.Cell_size);
+	}
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
