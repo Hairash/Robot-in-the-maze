@@ -1,0 +1,28 @@
+:root {
+    --cell-size: 50px;
+}
+
+#canvas {
+    position: fixed;
+}
+
+#change_btn {
+    position: fixed;
+}
+
+#queue {
+    position: absolute;
+    display: inline-block;
+    vertical-align: top;
+    width: var(--cell-size);
+    margin-top: 40px;
+    /* right: 50px; */
+    right: 100px;
+}
+
+.cell {
+    display: block;
+    width: var(--cell-size);
+    height: var(--cell-size);
+    border: 1px solid;
+}
