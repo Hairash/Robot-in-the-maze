@@ -16,8 +16,16 @@
     vertical-align: top;
     width: var(--cell-size);
     margin-top: 40px;
-    /* right: 50px; */
-    right: 100px;
+    right: 150px;
+}
+
+#panel {
+    position: fixed;
+    display: inline-block;
+    vertical-align: top;
+    width: var(--cell-size);
+    margin-top: 40px;
+    right: 50px;
 }
 
 .cell {

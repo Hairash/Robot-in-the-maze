@@ -16,4 +16,7 @@ function start() {
     queue = new Queue($('#queue'));
     queue.draw();
     queue.draw();
+
+    panel = new Queue($('#panel'), 5);
+    panel.draw();
 }
