@@ -34,3 +34,8 @@
     height: var(--cell-size);
     border: 1px solid;
 }
+
+.cell img {
+    max-width: 100%;
+    max-height: 100%;
+}
